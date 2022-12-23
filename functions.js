@@ -40,7 +40,7 @@ const hasUniqueChars = word => [...new Set(word)].length === word.length;
 // -> False
 
 //Time Complexity: O(n)
-//Space Complexity: O(1)
+//Space Complexity: O(n)
 
 const isPangram = sentence => [...new Set(sentence.toLowerCase().replaceAll(/\W|\s/g, ''))].sort().join('') === 'abcdefghijklmnopqrstuvwxyz';
 
