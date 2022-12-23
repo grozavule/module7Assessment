@@ -53,3 +53,9 @@ const isPangram = sentence => [...new Set(sentence.toLowerCase().replaceAll(/\W|
 //Time Complexity: O(n^4)
 //Space Complexity: O(n)
 
+const findLongestWord = words => words.sort((a, b) => b.length - a.length)[0].length;
+
+//console.log(findLongestWord(["hi", "hello", "benevolent", "fudge", "gravity", "brain", "to", "painting", "earthquakes"]));
+
+//Time Complexity: O(n)
+//Space Complexity: O(n)
