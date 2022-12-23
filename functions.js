@@ -33,13 +33,23 @@ const addToZero = numbers => {
 
 const hasUniqueChars = word => [...new Set(word)].length === word.length;
 
-console.log(hasUniqueChars("Monday"));
+//console.log(hasUniqueChars("Monday"));
 // -> True
 
-console.log(hasUniqueChars("Moonday"));
+//console.log(hasUniqueChars("Moonday"));
 // -> False
 
 //Time Complexity: O(n)
 //Space Complexity: O(1)
 
+const isPangram = sentence => [...new Set(sentence.toLowerCase().replaceAll(/\W|\s/g, ''))].sort().join('') === 'abcdefghijklmnopqrstuvwxyz';
+
+//console.log(isPangram("The quick brown fox jumps over the lazy dog!"));
+// -> True
+
+//console.log(isPangram("I like cats, but not mice"));
+// -> False
+
+//Time Complexity: O(n^4)
+//Space Complexity: O(n)
 
